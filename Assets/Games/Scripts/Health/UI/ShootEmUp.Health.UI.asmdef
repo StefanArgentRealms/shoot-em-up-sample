@@ -1,9 +1,8 @@
 {
-    "name": "ShootEmUp.Input.AI",
+    "name": "ShootEmUp.Health.UI",
     "rootNamespace": "",
     "references": [
-        "GUID:af3b2a344d9ba0548a81a450b1a12bd5",
-        "GUID:1651f6e346daa9542a5ab624b98a7021"
+        "GUID:7dadd25f4e3982e4a80905bac2c67ad8"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

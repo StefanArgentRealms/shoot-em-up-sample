@@ -10,14 +10,18 @@ namespace Games.Scripts.Health.Data
 
         private float currentHealth;
 
-        public Action<float> OnDamageTaken = default;
+        public Action<float> OnHealthChanged = default;
 
-        private void Start() => currentHealth = startHealth.Value;
+        private void Start()
+        {
+            currentHealth = startHealth.Value;
+            OnHealthChanged?.Invoke(currentHealth);
+        }
 
         public void Damage(float damage)
         {
             currentHealth -= damage;
-            OnDamageTaken?.Invoke(currentHealth);
+            OnHealthChanged?.Invoke(currentHealth);
         }
     }
 }

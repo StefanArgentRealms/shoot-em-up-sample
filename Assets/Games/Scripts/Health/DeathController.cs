@@ -8,9 +8,9 @@ namespace Games.Scripts.Health
         [SerializeField] private HealthContainer healthContainer;
         [SerializeField] private GameObject objectToDestroyOnDeath;
 
-        private void OnEnable() => healthContainer.OnDamageTaken += CheckHealth;
+        private void OnEnable() => healthContainer.OnHealthChanged += CheckHealth;
 
-        private void OnDisable() => healthContainer.OnDamageTaken -= CheckHealth;
+        private void OnDisable() => healthContainer.OnHealthChanged -= CheckHealth;
 
         private void CheckHealth(float health)
         {

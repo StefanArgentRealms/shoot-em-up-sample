@@ -1,10 +1,7 @@
 {
-    "name": "ShootEmUp.Input.AI",
+    "name": "ShootEmUp.Spawning",
     "rootNamespace": "",
-    "references": [
-        "GUID:af3b2a344d9ba0548a81a450b1a12bd5",
-        "GUID:1651f6e346daa9542a5ab624b98a7021"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
