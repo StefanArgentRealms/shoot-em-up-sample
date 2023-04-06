@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Games.Scripts.Input.AI;
+using Games.Scripts.Movement.Data;
 using UnityEngine;
 
 namespace Games.Scripts.Spawning
@@ -22,7 +24,14 @@ namespace Games.Scripts.Spawning
         private IEnumerator SpawnDelayCoroutine(Wave wave)
         {
             yield return new WaitForSeconds(wave.SpawnDelay);
-            Instantiate(wave.Prefab, wavesParent.position, wavesParent.rotation, wavesParent);
+            var spawnedWave = Instantiate(wave.Prefab, wavesParent.position, wavesParent.rotation, wavesParent);
+
+            //Looking through all children for simplicities sake.
+            //A more efficient approach would be to have a wave component that knows about all its children and that can pass along the movement data to them.
+            var moveAIs = spawnedWave.GetComponentsInChildren<MoveByCurveSetAI>();
+
+            foreach (var ai in moveAIs)
+                ai.SetCurveSet(wave.MovementCurveSet);
         }
 
         [Serializable]
@@ -30,9 +39,11 @@ namespace Games.Scripts.Spawning
         {
             [SerializeField] private GameObject prefab;
             [SerializeField] private float spawnDelay;
+            [SerializeField] private MovementCurveSet movementCurveSet;
 
             public GameObject Prefab => prefab;
             public float SpawnDelay => spawnDelay;
+            public MovementCurveSet MovementCurveSet => movementCurveSet;
         }
     }
 }

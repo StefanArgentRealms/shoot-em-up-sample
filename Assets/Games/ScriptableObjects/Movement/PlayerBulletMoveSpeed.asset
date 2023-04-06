@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c611b84a7b44171438a3ad2903838359, type: 3}
-  m_Name: EnemyMovementSpeed_Fast
+  m_Name: PlayerBulletMoveSpeed
   m_EditorClassIdentifier: 
-  value: 6
+  value: 20
