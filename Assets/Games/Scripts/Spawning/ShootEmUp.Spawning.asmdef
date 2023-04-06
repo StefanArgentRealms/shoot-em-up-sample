@@ -1,0 +1,17 @@
+{
+    "name": "ShootEmUp.Spawning",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1651f6e346daa9542a5ab624b98a7021",
+        "GUID:e16dfa5a5f3be8b4dbe5d866430761c5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

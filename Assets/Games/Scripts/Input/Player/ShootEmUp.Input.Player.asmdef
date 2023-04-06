@@ -1,0 +1,16 @@
+{
+    "name": "ShootEmUp.Input.Player",
+    "rootNamespace": "",
+    "references": [
+        "GUID:af3b2a344d9ba0548a81a450b1a12bd5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

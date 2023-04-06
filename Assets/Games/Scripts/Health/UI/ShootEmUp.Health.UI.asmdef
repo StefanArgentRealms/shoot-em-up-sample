@@ -1,0 +1,16 @@
+{
+    "name": "ShootEmUp.Health.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7dadd25f4e3982e4a80905bac2c67ad8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
