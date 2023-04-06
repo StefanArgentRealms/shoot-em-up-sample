@@ -23,7 +23,7 @@ namespace Games.Scripts.Input.Player
             var moveMagnitude = move.magnitude;
 
             if (moveMagnitude > 0)
-                move = moveMagnitude * move.normalized;
+                move = Mathf.Clamp01(moveMagnitude) * move.normalized;
 
             commandContainer.Move = move;
         }
