@@ -5,8 +5,8 @@ namespace Games.Scripts.Movement
     public class PositionLimiter : MonoBehaviour
     {
         [SerializeField] private Transform targetTransform;
-        [SerializeField] private Vector2 xPositionRange;
         [SerializeField] private Vector2 yPositionRange;
+        [SerializeField] private Vector2 zPositionRange;
 
         private void LateUpdate() => LimitPosition();
 
@@ -14,8 +14,8 @@ namespace Games.Scripts.Movement
         {
             var position = targetTransform.position;
 
-            position.x = Mathf.Clamp(position.x, xPositionRange.x, xPositionRange.y);
             position.y = Mathf.Clamp(position.y, yPositionRange.x, yPositionRange.y);
+            position.z = Mathf.Clamp(position.z, zPositionRange.x, zPositionRange.y);
 
             targetTransform.position = position;
         }

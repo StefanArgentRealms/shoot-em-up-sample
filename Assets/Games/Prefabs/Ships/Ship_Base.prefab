@@ -281,8 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 1370273487806678175}
-  xPositionRange: {x: -15, y: 15}
   yPositionRange: {x: -8, y: 8}
+  zPositionRange: {x: -15, y: 15}
 --- !u!1 &2490190072881583443
 GameObject:
   m_ObjectHideFlags: 0
