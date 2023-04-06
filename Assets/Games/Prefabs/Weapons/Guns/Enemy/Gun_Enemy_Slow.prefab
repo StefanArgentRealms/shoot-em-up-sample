@@ -69,6 +69,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9038036006862996475, guid: 33427f327316cb14498367a6deeefa11,
         type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 9203427098911741290, guid: adc1d73a2165bde4c8daa3a87a20d72f,
+        type: 3}
+    - target: {fileID: 9038036006862996475, guid: 33427f327316cb14498367a6deeefa11,
+        type: 3}
       propertyPath: timeBetweenShots
       value: 
       objectReference: {fileID: 11400000, guid: 07415160dff7e7749b424206a3bc0dfa,

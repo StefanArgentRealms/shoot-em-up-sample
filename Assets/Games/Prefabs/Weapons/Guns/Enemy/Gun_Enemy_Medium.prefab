@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 9038036006862996473, guid: 33427f327316cb14498367a6deeefa11,
         type: 3}
       propertyPath: m_Name
-      value: Gun_Base
+      value: Gun_Enemy_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 9038036006862996474, guid: 33427f327316cb14498367a6deeefa11,
         type: 3}
@@ -67,5 +67,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9038036006862996475, guid: 33427f327316cb14498367a6deeefa11,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 9203427098911741290, guid: adc1d73a2165bde4c8daa3a87a20d72f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33427f327316cb14498367a6deeefa11, type: 3}
