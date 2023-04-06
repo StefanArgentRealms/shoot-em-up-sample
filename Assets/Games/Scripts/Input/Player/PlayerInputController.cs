@@ -18,7 +18,7 @@ namespace Games.Scripts.Input.Player
         private void ProcessMoveInput()
         {
             //In a bigger project I would use Unity's new Input System instead of the legacy one.
-            var move = new Vector3(UnityEngine.Input.GetAxis("Horizontal"), UnityEngine.Input.GetAxis("Vertical"), 0);
+            var move = new Vector3(0, UnityEngine.Input.GetAxis("Vertical"), UnityEngine.Input.GetAxis("Horizontal"));
 
             var moveMagnitude = move.magnitude;
 

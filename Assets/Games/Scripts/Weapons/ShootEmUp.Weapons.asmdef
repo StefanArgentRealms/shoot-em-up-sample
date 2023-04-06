@@ -1,0 +1,17 @@
+{
+    "name": "ShootEmUp.Weapons",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7dadd25f4e3982e4a80905bac2c67ad8",
+        "GUID:5efca1561118fd8418466b1def70ff2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

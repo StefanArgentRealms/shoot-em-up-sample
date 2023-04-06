@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370273487806678175}
   - component: {fileID: 1370273487806678168}
+  - component: {fileID: 8301735884236334295}
   m_Layer: 0
   m_Name: Ship_Base
   m_TagString: Untagged
@@ -84,6 +85,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8301735884236334295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370273487806678174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318e98419edafc5498cc756f2942ebaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: {fileID: 11400000, guid: 0067411db2648e843bd1eaadf65ce453, type: 2}
 --- !u!1 &1370273488402319426
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,10 +389,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2314718161950348217}
-  - component: {fileID: 6112328116898449509}
   - component: {fileID: 3955162037150211363}
   m_Layer: 0
-  m_Name: Health
+  m_Name: DeathController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,19 +412,6 @@ Transform:
   m_Father: {fileID: 1370273487806678175}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6112328116898449509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3112094432039329351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 318e98419edafc5498cc756f2942ebaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealth: {fileID: 11400000, guid: 0067411db2648e843bd1eaadf65ce453, type: 2}
 --- !u!114 &3955162037150211363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,5 +424,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f055ebdf3a1d6f4296eba96ad8c6d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthContainer: {fileID: 6112328116898449509}
+  healthContainer: {fileID: 8301735884236334295}
   objectToDestroyOnDeath: {fileID: 1370273487806678174}
